@@ -606,7 +606,7 @@ ul.form.ratio-s100>li>div {flex-basis:auto;max-width:none;}
 [data-tooltip]:hover:after {visibility:visible;opacity:1;}
 /*--mask--*/
 [data-mask] {position:relative;}
-[data-mask]>.mask {position:absolute;top:0;left:0;z-index:10000;display:flex;flex-direction:column;justify-content:center;align-items:center;visibility:hidden;padding:1rem;width:100%;height:100%;background-color:rgba(0,0,0,.8);color:#fff;text-align:center;opacity:0;}
+[data-mask]>.mask {position:absolute;top:0;left:0;z-index:1200;display:flex;flex-direction:column;justify-content:center;align-items:center;visibility:hidden;padding:1rem;width:100%;height:100%;background-color:rgba(0,0,0,.8);color:#fff;text-align:center;opacity:0;}
 [data-mask]>.mask.active {visibility:visible;opacity:1;}
 @keyframes loading-rotate {to{transform:rotate(360deg);-webkit-transform:rotate(360deg);}}
 /*--scrollbar--*/
