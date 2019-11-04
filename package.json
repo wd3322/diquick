@@ -1,0 +1,14 @@
+{
+  "name": "diquick",
+  "version": "1.0.1",
+  "description": "diquick",
+  "main": "diquick.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "diquick"
+  ],
+  "author": "withoutd",
+  "license": "MIT"
+}
