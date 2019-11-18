@@ -13,6 +13,6 @@ import 'diquick/diquick.css'
 
 ## example
 
-![Dashboard](http://www.diquick.com/static/images/dashboard.png)
-![Photo](http://www.diquick.com/static/images/photo.png)
-![Enterprise](http://www.diquick.com/static/images/enterprise.png)
+![Dashboard](https://images.gitee.com/uploads/images/2019/1118/101048_509165f5_1073834.png "Dashboard")
+![Photo](https://images.gitee.com/uploads/images/2019/1118/101048_55a864a2_1073834.png "Photo")
+![Enterprise](https://images.gitee.com/uploads/images/2019/1118/101048_58e79848_1073834.png "Enterprise")
