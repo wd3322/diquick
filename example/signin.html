@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign In - DiQuick</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="keywords">
+  <meta name="description" content="description"> 
+  <link rel="stylesheet" href="https://unpkg.com/diquick@1.4.10/diquick.css">
+  <style>
+    body {background-color:#f2f2f2;}
+    /*--button--*/
+    .btn {background-color:#513fb5;color:#fff;}
+    .btn:hover {color:#fff;}
+    /*--panel--*/
+    .panel.login {margin:8% auto 0 auto;max-width:450px;border-radius:.5rem;box-shadow:0 .5rem 2rem rgba(0,0,0,.2);}
+    .panel.login>.title {padding:1.25rem;background-color:#513fb5;color:#fff;text-align:center;font-size:1.5rem;}
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="shell">
+      <!-- panel begin -->
+      <div class="panel login">
+        <div class="title">Sign in</div>
+        <div class="content">
+          <ul class="form ratio100">
+            <li>
+              <span>Username</span>
+              <div class="icon"><i class="flaticon-user151"></i><input name="name" type="text"></div>
+            </li>
+            <li>
+              <span>Password</span>
+              <div class="icon"><i class="flaticon-locked44"></i><input name="password" type="password"></div>
+            </li>
+            <li>
+              <div><label class="line"><input type="checkbox">Remember me</label></div>
+            </li>
+            <li>
+              <div class="tc"><button type="button" class="btn">Sign In</button></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- panel end -->
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/diquick@1.4.10/diquick.js"></script>
+</body>
+
+</html>

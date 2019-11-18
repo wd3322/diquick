@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard - DiQuick</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="keywords">
+  <meta name="description" content="description"> 
+  <link rel="stylesheet" href="https://unpkg.com/diquick@1.4.10/diquick.css">
+  <style>
+    body {background-color:#f2f2f2;color:#333;}
+    a,form {color:#333;}
+    a:hover {color:#3f51b5;}
+    /*--layout--*/
+    .wrapper {margin-left:0;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+    .wrapper.active {margin-left:20rem;}
+    .container {padding:2rem 1rem;width:100%;}
+    @media screen and (max-width:750px) {
+    .wrapper {width:100%;}
+    }
+    /*--topbar--*/
+    .topbar {padding:1rem 2rem;background-color:#fff;box-shadow:0 0px 8px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);}
+    .topbar .sidebar-btn {margin-top:.25rem;color:#999;font-size:1.5rem;cursor:pointer;}
+    .topbar .sidebar-btn:hover {color:#666;}
+    /*--button--*/
+    .btn {background-color:#513fb5;color:#fff;}
+    .btn:hover {color:#fff;}
+    /*--sidebar--*/
+    #sidebar>.content {padding:2rem 0;width:20rem;background-color:#111;color:#fff;}
+    #sidebar>.content .menu {box-shadow:none;background-color:transparent;color:#fff;}
+    #sidebar>.content .menu>div {padding:.75rem 1rem;font-size:1.15rem;border:0;}
+    #sidebar>.content .menu>div>ul {background-color:#3f51b5;color:#fff;}
+  </style>
+</head>
+
+<body>
+  <div class="wrapper active">
+    <div class="main">
+      <!-- topbar begin -->
+      <div class="topbar">
+        <div class="box">
+          <div class="grid">
+            <i class="flaticon-four92 sidebar-btn" data-toggle-drawer="sidebar"></i>
+          </div>
+          <div class="grid tr">
+            <div class="dropmenu mr7">
+              <span>Language: English</span>
+              <ul>
+                <li class="active">English</li>
+                <li>Chinese</li>
+              </ul>
+            </div>
+            <a href="#" class="btn xs">Website</a>
+          </div>
+        </div>
+      </div>
+      <!-- topbar end -->
+      <!-- container begin -->
+      <div class="container">
+        <div class="box">
+          <div class="grid50 grid-m100 plr">
+            <!-- panel begin -->
+            <div class="panel">
+              <div class="title">Panel Default</div>
+              <div class="content">
+                <h3>h3. heading</h3>
+                <p>Need to get some protection for your new smartphone or tablet?</p> 
+              </div>
+            </div>
+            <!-- panel end -->
+          </div>
+          <div class="grid50 grid-m100 plr">
+            <!-- panel begin -->
+            <div class="panel" data-mask>
+              <div class="title">Panel Default</div>
+              <div class="content">
+                <h3>h3. heading</h3>
+                <p>Need to get some protection for your new smartphone or tablet?</p> 
+              </div>
+              <div class="mask active">
+                <p>This is mask.</p>
+                <span class="loading c-gray"></span>
+              </div>
+            </div>
+            <!-- panel end -->
+          </div>
+          <div class="grid50 grid-m100 plr">
+            <!-- panel begin -->
+            <div class="panel">
+              <div class="title">Media List</div>
+              <div class="content">
+                <ul class="box-array list2 list-s1 plr">
+                  <li>
+                    <div class="media zoom">
+                      <div class="img"><img data-open-dialog="img@" src="../images/img1.jpg"></div>
+                      <div class="content">
+                        <h6>iPhone Cases</h6>
+                        <p>Keep your smartphone safe from bumps, bruises, drops, and more with our covers.</p>
+                        <div class="btn-group">
+                          <button type="button" class="btn xs" data-open-dialog="edit">Edit</button>
+                          <button type="button" class="btn xs bg-black" data-open-dialog="del">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media zoom">
+                      <div class="img"><img data-open-dialog="img@" src="../images/img2.jpg"></div>
+                      <div class="content">
+                        <h6>Business Cards</h6>
+                        <p>Browse all of our office essentials to keep you organized while showing off your individual style.</p>
+                        <div class="btn-group">
+                          <button type="button" class="btn xs" data-open-dialog="edit">Edit</button>
+                          <button type="button" class="btn xs bg-black" data-open-dialog="del">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- panel end -->
+          </div>
+          <div class="grid50 grid-m100 plr">
+            <!-- panel begin -->
+            <div class="panel">
+              <div class="title">Edit Content</div>
+              <div class="content">
+                <ul class="form ratio100">
+                  <li>
+                    <span>Title</span>
+                    <div><input type="text" value="T-Shirt"></div>
+                  </li>
+                  <li>
+                    <span>Menu</span>
+                    <div>
+                      <select class="line">
+                        <option>Clothing</option>
+                        <option>Accessories</option>
+                        <option>Electronics</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Info</span>
+                    <div><input type="text" value="This Dad Does Diapers, Cool Fathers Day New Dad Men's V-Neck T-Shirt."></div>
+                  </li>
+                  <li>
+                    <div><label><input type="checkbox">Comment</label></div>
+                  </li>
+                  <li>
+                    <div><button type="button" class="btn" data-open-message="success">Submit</button></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- panel end -->
+          </div>
+          <div class="grid100 plr">
+            <!-- panel begin -->
+            <div class="panel">
+              <div class="title">Order List</div>
+              <div class="content">
+                <div class="box">
+                  <div class="grid">
+                    <button type="button" class="btn xs mb5" data-open-dialog="del">Batch delete</button>
+                  </div>
+                  <div class="grid tr">
+                    <ul class="form">
+                      <li><span>Search:</span><div><input name="search" type="text"></div></li>
+                      <li><button type="submit" class="btn xs">Search</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- table begin -->
+                <div class="table-scroll nowrap">
+                  <table class="table hover">
+                    <thead>
+                      <tr>
+                        <th><label><input type="checkbox">Order</label></th>
+                        <th>Order Date</th>
+                        <th>Product Information</th>
+                        <th>Price</th>
+                        <th>Username</th>
+                        <th>Status</th>
+                        <th>Operating</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><label><input type="checkbox">A012016032402</label></td>
+                        <td>2016/3/24</td>
+                        <td>This Dad Does Diapers, Cool Fathers Day New Dad Men's V-Neck T-Shirt</td>
+                        <td>$338.39</td>
+                        <td>Aaron</td>
+                        <td>Unpaid</td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn xs" data-open-dialog="edit">Edit</button>
+                            <button type="button" class="btn xs bg-black" data-open-dialog="del">Delete</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label><input type="checkbox">A012016032402</label></td>
+                        <td>2016/3/24</td>
+                        <td>This Dad Does Diapers, Cool Fathers Day New Dad Men's V-Neck T-Shirt</td>
+                        <td>$338.39</td>
+                        <td>Cary</td>
+                        <td>Unpaid</td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn xs" data-open-dialog="edit">Edit</button>
+                            <button type="button" class="btn xs bg-black" data-open-dialog="del">Delete</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label><input type="checkbox">A012016032402</label></td>
+                        <td>2016/3/24</td>
+                        <td>This Dad Does Diapers, Cool Fathers Day New Dad Men's V-Neck T-Shirt</td>
+                        <td>$338.39</td>
+                        <td>Evan</td>
+                        <td>Unpaid</td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn xs" data-open-dialog="edit">Edit</button>
+                            <button type="button" class="btn xs bg-black" data-open-dialog="del">Delete</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table end -->
+                <!-- page begin -->
+                <div class="tc">
+                  <p>Recordcount: 5</p>
+                  <div class="btn-group">
+                    <button type="button" class="btn xs disabled">Prev</button>
+                    <button type="button" class="btn xs bg-black">1</button>
+                    <button type="button" class="btn xs">2</button>
+                    <button type="button" class="btn xs">3</button>
+                    <button type="button" class="btn xs">4</button>
+                    <button type="button" class="btn xs">5</button>
+                    <button type="button" class="btn xs">Next</button>
+                  </div>
+                </div>
+                <!-- page end -->
+              </div>
+            </div>
+            <!-- panel end -->
+          </div>
+        </div>
+      </div>
+      <!-- container begin -->
+      <!-- sidebar[drawer] begin -->
+      <div id="sidebar" class="drawer left active notmask" data-keep-position>
+        <div class="content">
+          <div class="media tc">
+            <div class="img">
+              <img src="../images/user.png" class="radius" style="width:35%;">
+            </div>
+            <div class="content">
+              <h6 class="mb1">Username</h6>
+              <p class="mb3">Good afternoon!</p>
+              <button type="button" class="btn xs" data-open-dialog="logout">Log out</button>
+            </div>
+          </div>
+          <div class="menu column">
+            <div class="notlist">
+              <i class="flaticon-home140 mr3"></i><span>Dashboard</span>
+            </div>
+            <div>
+              <i class="flaticon-gear31 mr3"></i><span>Config</span>
+              <ul>
+                <li>menu item</li>
+                <li>menu item</li>
+                <li>menu item</li>
+              </ul>
+            </div>
+            <div>
+              <i class="flaticon-menu48 mr3"></i>Menu
+              <ul>
+                <li>menu item</li>
+                <li>menu item</li>
+                <li>menu item</li>
+              </ul>
+            </div>
+            <div>
+              <i class="flaticon-text130 mr3"></i>News
+              <ul>
+                <li>menu item</li>
+                <li>menu item</li>
+                <li>menu item</li>
+              </ul>
+            </div>
+            <div>
+              <i class="flaticon-user151 mr3"></i>User
+              <ul>
+                <li>menu item</li>
+                <li>menu item</li>
+                <li>menu item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar[drawer] end -->
+      <!-- edit[dialog] begin -->
+      <div id="edit" class="dialog">
+        <div class="content" data-scrollbar>
+          <h6 class="mb5 tc">Edit Order<small class="ml5">A012016032402</small></h6>
+          <ul class="form ratio100">
+            <li>
+              <span>Menu</span>
+              <div>
+                <select class="line">
+                  <option>Clothing</option>
+                  <option>Accessories</option>
+                  <option>Electronics</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <span>Keyword</span>
+              <div><input type="text" value="T-Shirt"></div>
+            </li>
+            <li>
+              <span>Information</span>
+              <div><input type="text" value="This Dad Does Diapers, Cool Fathers Day New Dad Men's V-Neck T-Shirt"></div>
+            </li>
+            <li>
+              <div class="tc"><button type="button" class="btn" data-close-dialog data-open-message="success">Submit</button></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- edit[dialog] end -->
+      <!-- del[dialog] begin -->
+      <div id="del" class="dialog notmask">
+        <div class="content tc" data-scrollbar>
+          <p>Please confirm that you want to delete this content.</p>
+          <div class="btn-group">
+            <button class="btn xs" data-close-dialog data-open-message="success">Confirm</button>
+            <button class="btn xs bg-black" data-close-dialog>Cancel</button>
+          </div>
+        </div>
+      </div>
+      <!-- del[dialog] end -->
+      <!-- logout[dialog] begin -->
+      <div id="logout" class="dialog notmask">
+        <div class="content tc" data-scrollbar>
+          <p>Please confirm that you want to log out of dashboard.</p>
+          <div class="btn-group">
+            <button class="btn xs" data-close-dialog>Confirm</button>
+            <button class="btn xs bg-black" data-close-dialog>Cancel</button>
+          </div>
+        </div>
+      </div>
+      <!-- logout[dialog] end -->
+      <!-- success[message] begin -->
+      <div name="success" class="message fade bg-green c-white" data-close-timeout="1000">
+        <p><i class="flaticon-information59 mr3"></i>Successful operation.</p>
+      </div>
+      <!-- success[message] end -->
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/diquick@1.4.10/diquick.js"></script>
+  <script>
+    //toggle wrapper
+    const button = document.querySelector('[data-toggle-drawer]');
+    const wrapper = document.querySelector('.wrapper');
+    button.addEventListener('click', function () {
+      wrapper.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
