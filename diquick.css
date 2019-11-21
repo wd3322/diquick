@@ -1,5 +1,5 @@
-/*DiQuick v1.4.10 www.diquick.com*/
-/*-----------------------element------------------------*/
+/*DiQuick v1.4.20 www.diquick.com*/
+/*-----------------------elements------------------------*/
 /**--html--**/
 html {font-size:14px;}
 body {background-color:#fff;color:#333;font-size:1rem;font-family:"Helvetica Neue","Helvetica","Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei","sans-serif";}
@@ -336,7 +336,7 @@ ul.box-array.list-s12>li {flex-basis:8.33339%;max-width:8.33339%;}
 .show-s {display:block !important;}
 .hide-s {display:none !important;}
 }
-/*-----------------------module------------------------*/
+/*-----------------------components------------------------*/
 /*--panel--*/
 .panel {display:flex;flex-direction:column;overflow:hidden;margin-bottom:1.5rem;border-radius:.375rem;background-color:#fff;box-shadow:.1rem .1rem 1rem rgba(0,0,0,.2);color:#333;}
 .panel>.title {padding:.75rem 1.5rem;border-bottom:1px solid rgba(0,0,0,.1);text-align:left;font-size:1.25rem;line-height:1.5;}
@@ -392,7 +392,8 @@ a.badge:hover {text-shadow:0 0 1rem rgba(0,0,0,1);color:#fff;}
 .switch:after {position:relative;top:-.125rem;left:-.125rem;display:inline-block;width:2rem;height:2rem;border-radius:50%;background-color:#fff;box-shadow:.1rem .1rem .5rem rgba(0,0,0,.15);content:"";}
 .switch.active:after {left:calc(100% - 1.875rem);}
 /*--loading--*/
-.loading {display:inline-block;width:3rem;height:3rem;border:.25rem solid currentColor;border-left:.25rem solid rgba(0,0,0,.1);border-radius:50%;color:rgba(0,0,0,.8);content:"";animation:loading-rotate 1s linear infinite;-webkit-animation:loading-rotate 1s linear infinite;}
+.loading,
+.dialog#HTMLImageElement:not([data-load-complete]):after {display:inline-block;width:3rem;height:3rem;border:.25rem solid currentColor;border-left:.25rem solid rgba(0,0,0,.1);border-radius:50%;color:rgba(0,0,0,.8);content:"";animation:loading-rotate 1s linear infinite;-webkit-animation:loading-rotate 1s linear infinite;}
 @keyframes loading-rotate {to{transform:rotate(360deg);-webkit-transform:rotate(360deg);}}
 /*--progress--*/
 .progress {display:flex;overflow:hidden;margin-bottom:1.5rem;border-radius:.375rem;background-color:#f2f2f2;box-shadow:.1rem .1rem .5rem rgba(0,0,0,.15);}
@@ -596,6 +597,8 @@ ul.form.ratio-s100>li>div {flex-basis:auto;max-width:none;}
 .dialog.notmask {z-index:10001;background-color:transparent;}
 .dialog>img {max-height:100%;box-shadow:.1rem .1rem 1rem rgba(0,0,0,.2);}
 .dialog>.content {padding:2rem;min-width:35rem;max-width:100%;border-radius:.375rem;background-color:#fff;box-shadow:.1rem .1rem 1rem rgba(0,0,0,.2);color:#333;text-align:left;}
+.dialog#HTMLImageElement:not([data-load-complete]):after {color:#999;}
+.dialog#HTMLImageElement:not([data-load-complete])>img {display:none;}
 @media screen and (max-width:750px) {
 .dialog {padding-left:12.5%;padding-right:12.5%;}
 .dialog>.content {min-width:100%;}
